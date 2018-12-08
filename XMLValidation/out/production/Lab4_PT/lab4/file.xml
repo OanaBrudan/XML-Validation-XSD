@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Recipes xmlns:xsi="http//www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="src/lab4/file.xsd">
+	<Description>Good</Description>
+	<Recipe>
+		<Title>Pasta</Title>
+		<Ingredients>
+			<Ingredient name="Pasta" qty=1 unit="kg"/>
+			<Ingredient name="SourCream" qty=2 unit="piece"/>
+			<Ingredient name="Pesto" qty=4 unit="ml"/>
+		</Ingredients>
+		<Preparation>
+			<Step>Boil</Step>
+			<Step>Finish</Step>
+		</Preparation>
+		<Comment>Eat</Comment>
+		<Nutrients proteins=12 carbohydrates=100 fat=10 vitamins=20 calories=20/>
+	</Recipe>	
+	<Recipe>
+		<Title>Pizza</Title>
+		<Ingredients>
+			<Ingredient name="Flour" qty=1 unit="kg"/>
+			<Ingredient name="Tomato" qty=5 unit="piece"/>
+			<Ingredient name="Ham" qty=10 unit="piece"/>
+		</Ingredients>
+		<Preparation>
+			<Step>Cook</Step>
+			<Step>Finish</Step>
+		</Preparation>
+		<Comment>Eat</Comment>
+		<Nutrients proteins=10 carbohydrates=100 fat=10 vitamins=20 calories=20/>
+	</Recipe>
+</Recipes>

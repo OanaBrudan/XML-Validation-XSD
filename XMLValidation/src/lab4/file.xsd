@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Recipes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Description" type="xs:string"/>
+				<xs:element name="Recipe">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Title" type="xs:string"/>
+							<xs:element name="Ingredients" minOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Ingredient">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+												<xs:attribute name="qty" type="xs:int" use="required"></xs:attribute>
+												<xs:attribute name="unit" type="xs:string" use="required"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Preparation">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Step" type="xs:string" minOccurs="1"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+							<xs:element name="Nutrients">
+								<xs:complexType>
+									<xs:attribute name="proteins" type="xs:int" use="required"></xs:attribute>
+									<xs:attribute name="carbohydrates" type="xs:int" use="required"></xs:attribute>
+									<xs:attribute name="fat" type="xs:int" use="optional"></xs:attribute>
+									<xs:attribute name="vitamins" type="xs:NMTOKENS" use="required"></xs:attribute>
+									<xs:attribute name="calories" type="xs:int" use="required"></xs:attribute>
+								</xs:complexType>
+							</xs:element>	
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
